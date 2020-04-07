@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>SARS-CoV-2 Pandemic 2019-2020</title>
+    <title>SARS-CoV-2 Pandemic 2019-now</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Authors: Elena Dudukina, Raquel Raquel Avelar, Deirdre Cronin Fenton" />
+    <meta name="author" content="Elena Dudukina, Raquel Raquel Avelar, Deirdre Cronin Fenton" />
     <meta name="date" content="2020-04-07" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -11,9 +11,9 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# SARS-CoV-2 Pandemic 2019-2020
+# SARS-CoV-2 Pandemic 2019-now
 ## Introduction to the little known
-### Authors: Elena Dudukina, Raquel Raquel Avelar, Deirdre Cronin Fenton
+### Elena Dudukina, Raquel Raquel Avelar, Deirdre Cronin Fenton
 ### 2020-04-07
 
 ---
@@ -75,64 +75,75 @@ class: center, middle, inverse, title-slide
  # Emerging Infectious Diseases
 **Identification of infectious agents and diseases that were not recognized before**
 
-**Infection states**
+## Infection states
 
 - Progression-Related
 
-State of Infection | Definition| Alternative Terms
- --------|---------|---------
-Colonization | Transient colonization tissue invasion | Transient colonization
-Infection | Agent is present in host tissues without signs, symptoms, or laboratory evidence of tissue damage | Subclinical infection, asymptomatic infection
-Latency | Infection in which the agent has invaded the host and is in a nonreplicating, noninfectious, but viable state | Latent infection, persistent infection, chronic infection
-Disease | Agent is replicating in host tissues with signs, symptoms, or laboratory evidence of tissue damage | Clinical disease, symptomatic infection
-Cure | Agent has been eliminated from host tissue (may persist on surface) | Resolution
+State of Infection | Definition
+ -------------|--------------------------------------
+Colonization | Transient colonization tissue invasion
+Subclinical infection | Agent is present in host tissues without signs, symptoms, or laboratory evidence of tissue damage
+Latency | Infection in which the agent has invaded the host and is in a nonreplicating, noninfectious, but viable state
+Disease | Agent is replicating in host tissues with signs, symptoms, or laboratory evidence of tissue damage
+Cure | Agent has been eliminated from host tissue (may persist on surface)
 
 ---
-**Infection states**
+# Infection states
 
 - Transmission-Related
 
-State of Infection | Definition| Alternative Terms
+State of Infection | Definition
  --------|---------|---------
-Preinfectious | Host is infected but has not become infectious | Latency, preinfective period
-Infectious | Host is capable of transmitting agent to others | Contagiousness, infective period
-Postinfectious | Host is no longer capable of transmission | Cure, postinfective period
+Preinfectious | Host is infected but has not become infectious
+Infectious | Host is capable of transmitting agent to others
+Postinfectious | Host is no longer capable of transmission
 
 .footnote[Rothman KJ, Modern Epidemiology, 3rd Edition]
 
 ---
-# Modeling infectious diseases
-- Agent-based models
-- Multi-level models
-- Network models
-- Compartmental models
-    - SIR (Susceptible → Infectious → Recovered)
-    - SEIR (Susceptible → Exposed → Infectious → Recovered)
-    - SEIS (Susceptible → Exposed → Infectious → Susceptible)
-    - Other modifications to accomodate duration of post-infection immunity, vaccination, etc.
+# Modeling infectious diseases spread
+- **Aims**
+  - Prediction
+  - Consequences of intervention ("causal" flavour and counterfactual reasoning)
+- **Models**
+  - **Deterministic compartmental models (DCMs)**
+      - SIR (Susceptible → Infectious → Recovered)
+      - SIRS (Susceptible → Infectious → Recovered → Susceptible)
+      - SEIR (Susceptible → Exposed → Infectious → Recovered)
+      - Modifications accomodating other compartments to model post-infection immunity, vaccination, etc.
+      - Straightforward/transparent
+  
+  _Simulating individuals not the population groups_
+  - **Agent-based models (ABMs)**
+  - **Network models**
+
+- Calibration, Validation, Sensitivity analyses
+
+.left[
+[Dr. Samuel Jenness, 2020](https://scholarblogs.emory.edu/epi/2020/04/05/modeling-covid-19/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=modeling-covid-19); [Imperial College London](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)
+]
 
 ---
 # Key definitions
 - Attack rate
   - The proportion of the population which contracts the disease fro the population at risk
 
-
 - Case-fatality risk (CFR)
   - The probability that a person dies from an infection given that they are a case
 
-
 - Infection-fatality risk (IFR)
   - Defines a case as a person who has shown evidence of infection, either by clinical detection of the pathogen or by seroconversion or other immune response
+  
+- Basic reproductive number **R0** (often pronounced _"R naught"_)
+  - The **average number of secondary cases** of an infection that occur **in a completely
+susceptible population following a single infectious case**
 
 .footnote[[Lipsitch, 2015](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846)]
 
 ---
 # Basic Reproductive Number
 .pull-left[
-- **R0** (often pronounced _"R naught"_)
-  - The **average number of secondary cases** of an infection that occur **in a completely
-susceptible population following a single infectious case**
-  
+
   _How many other people one contagious individual will infect in non-immune population?_
   
   - Mathematical modeling of transmission within populations
@@ -153,7 +164,7 @@ susceptible population following a single infectious case**
 
 - **SARS-CoV-2**
 - β-coronavirus (other two known β-CoVs are SARS-CoV and MERS-CoV)
-- Origin:  bats via unknown intermediate hosts to infect humans
+- Origin: bats via unknown intermediate hosts to infect humans
 - Uses angiotensin-converting enzyme 2 (ACE2), the same receptor as SARS-CoV, to infect humans
 - Incubation period
     - Median 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of those who develop symptoms will do so within 11.5 days ([mainland China data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081172))
@@ -165,8 +176,14 @@ susceptible population following a single infectious case**
 .right[![:scale 30%](SARS CoV2.jfif)]
 
 ---
+# March 2020: recap
+.center[![](covid19-happening.png)]
+
+.footnote[[Imperial College London](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)]
+---
 # Testing for COVID-19
-- Different testing patterns/kits in different countries
+- Different testing capacity/kits
+- Different ways of recording/sharing data
 
 - Probability of being tested is not independent of disease severity and of the outcome
 
@@ -204,17 +221,12 @@ susceptible population following a single infectious case**
 ---
 ![:scale 75%](COVID-CFR-by-age.png)
 ---
-**Beware of bias when calculating case-fatality rate**
+**Beware of bias when interpreting case-fatality rate**
 - The data we use to estimate the CFR are often gathered for other purposes
-
 - Challenging &amp; constantly changing circumstances
-
 - Preferential testing and counting of severe cases → overestimation
-
 - At any point during ongoing epidemic we haven't yet observed disease outcomes for everyone → underestimation
-
 - Delayed reporting: outcomes observed now are reported later
-
 - Forward contact tracing → pre-symptomatic individuals → less prone to bias CFR estimates
 
 - Comparison of CFR across groups
@@ -223,32 +235,124 @@ susceptible population following a single infectious case**
       - Selection
       - Confounding
 
+- Inference is never based on available data alone
+    - Data collection + what we did not collect + what we collected + assumptions
+
 .footnote[[Lipsitch, 2015](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846)]
+---
+# Mind the populations
+
+.pull-left[
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;This is a misreading of the data from China, interepreting numbers from one population as being from another. Please see attached and withdraw the manuscript immediately &lt;a href="https://t.co/JTYqMmuCdF"&gt;pic.twitter.com/JTYqMmuCdF&lt;/a&gt;&lt;/p&gt;&amp;mdash; Yaneer Bar-Yam (@yaneerbaryam) &lt;a href="https://twitter.com/yaneerbaryam/status/1246158748047073286?ref_src=twsrc%5Etfw"&gt;April 3, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+]
+
+.pull-right[![:scale 85%](pre-symptomatic.jfif)]
 
 ---
-# Treatment of COVID19
-- Only symptomatic treatment
-- Clinical trials for variety of agents (antiviral and other)
-- Possibility of low-quality publications
+# Risk factors for severe illness
+.pull-left[
+- Age 60+
+
+- Comorbidities
+  - Cardiovascular disease
+  - Diabetes mellitus
+  - Hypertension
+  - Chronic lung disease
+  - Cancer
+  - Chronic kidney disease
+  
+- Possibly sex
+  - Larger proportion of men was in deceased group than that in recovered group (73% vs 55%)
+
+.footnote[[Jian-Min Jin, 2020](https://www.medrxiv.org/content/10.1101/2020.02.23.20026864v2); [Chen, 2020](https://www.bmj.com/content/368/bmj.m1091)]
+]
+
+.pull-right[
+![](covid-comorbid.png)
+]
 ---
-# Chloroquine + azytromycin study
+# Treatment of COVID-19
+- No specific treatment available
+  - Oxygenation support for severely ill
+
+- Clinical trials for variety of agents (antiviral, immune modulators, etc.)
+  - Chloqoquine, hydroxychloroquine and azithromycin, tocilizumab, camostat mesilate, sargramostim, colchicine, imatinib, IFNβ-1a, inhaled steroids, remdesivir, oseltamivir, etc. [(EU Clinical Trial Register;](https://www.clinicaltrialsregister.eu/ctr-search/search?query=covid-19) [laegemiddelstyrelsen.dk)](https://laegemiddelstyrelsen.dk/da/nyheder/temaer/ny-coronavirus-covid-19/~/media/5B83D25935DF43A38FF823E24604AC36.ashx)
+
+- Available results
+  - Lopinavir-ritonavir vs standard care showed no decrease in mortality of COVID-19 patients [(Cao, 2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001282?query=featured_coronavirus)
+
+--
+
+- Possible impact of SARS-CoV-2 epidemic on other ongoing clinical trials [(EMA, 2020)](https://www.ema.europa.eu/en/documents/scientific-guideline/points-consider-implications-coronavirus-disease-covid-19-methodological-aspects-ongoing-clinical_en.pdf)
+
+- Need of high-quality evidence and responsible conduct of research
 ---
-# Antibody response and vaccine development
+# Study of chloroquine + azytromycin
+![](chlor-azytro.png)
 
 ---
-# What next?
+# Points of concern
+.left[
+- Design
+  - In essence - observational study without adjustment for the sources of bias
+- Number of participants
+- Potentially no peer review (pre-print vs printed version)
+- "Control group" ascertainment
+    - Refused consent to receive active treatment → allocated to "control group"
+    - Ethically and methodologically problematic
+- Loss-to-follow-up (selection bias)
+    - From 26 patients in "treatment group", 6 were excluded (4 out of 6 developed severe disease/died)
+    - Could make the treatment look beneficial when it isn't
+- Outcome (SARS-CoV-2+/- on day 6)
+  - Dichotomization of viral load
+  - Day 6
+      - No biologic justification
+      - Missing outcome data
+      - Some patients were positive on day 6 but negative on day 9; one was negative on day 6 but positive on day 8
+      - PCR procedure different from the official CDC protocol
+      - Clinical relevance of the end-point
 
+[Dahly, Gates, Morris, 2020](https://zenodo.org/record/3724167#.XowsG9IzbBQ)]
+---
+# Vaccine development
+- **Time**
+    - 18 months
+- **Funding**
+ - Wellcome trust: raising **$8bn**[](https://wellcome.ac.uk/what-we-do/our-work/coronavirus-covid-19/investment/covid-zero?utm_source=twitter&amp;utm_medium=o-wellcome)
+ - Coalition for Epidemic Preparedness Innovations (Cepi) + Novavax + University of Oxford
+      - Established funding **$4.4m** and raising **$2bn**  [(Guardian, MArch 2002)](https://www.theguardian.com/world/2020/apr/06/when-will-coronavirus-vaccine-be-ready)
+- Phase 1 Clinical Trial Of COVID-19 vaccine candidates [(WHO, March 2020)](https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf?ua=1)
+
+- Countries cannot afford "herd immunity" approach
+  - 0.41%-15% infected in Europe by the end of March 2020 [Imperial College London](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)
+  &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;9/ Substituting in for R, we get:&lt;br&gt;&lt;br&gt;R&amp;lt;1 =&amp;gt; R0*(% susceptible)&amp;lt;1 =&amp;gt; %susceptible&amp;lt;1/R0&lt;br&gt;&lt;br&gt;Solving for R0 = 3, we get %susceptible&amp;lt;33.3%&lt;br&gt;&lt;br&gt;In other words, as long as more than 33% of the population is susceptible, the disease spreads&lt;/p&gt;&amp;mdash; Health &amp;quot;Physical Isolation&amp;quot; Nerd (@GidMK) &lt;a href="https://twitter.com/GidMK/status/1247328601155842051?ref_src=twsrc%5Etfw"&gt;April 7, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+---
+# Global consequences
+- Economics-related
+  - Plummeted stock markets
+  - Jobs' losses and unemployment
+  - Recession
+
+- Healthcare-related
+
+- People's lives
+
+- Poorest countries and communities are most affected and cannot cope alone
+
+- "A Once-in-a-Century Pandemic?" [Bill Gates](https://www.nejm.org/doi/full/10.1056/NEJMp2003762)
+  - "Governments and industry will need to come to an agreement"
 ---
 # Thank you for attention
+.center[![:scale 60%](from-home.jpg)]
 
 ---
 # Resources
 - https://ourworldindata.org/coronavirus#
-- http://www.healthdata.org/covid/faqs
 - http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-13-europe-npi-impact/
+- https://twitter.com/EpiEllie
 - https://twitter.com/mlipsitch
 - https://twitter.com/CT_Bergstrom
-- https://twitter.com/EpiEllie
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -257,11 +361,7 @@ susceptible population following a single infectious case**
 "ratio": "16:9",
 "highlightStyle": "github",
 "highlightLines": true,
-"countIncrementalSlides": false,
-"background-image": "url(aulogo_uk_var2_white.png)",
-"background-position": "top right",
-"background-size": "110px 120px",
-"layout": true
+"countIncrementalSlides": false
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
