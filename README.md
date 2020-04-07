@@ -1,1 +1,1 @@
-# mm-gh-pages.github.io
+# mm-gh-pages
