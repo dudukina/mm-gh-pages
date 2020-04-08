@@ -1,7 +1,7 @@
 ---
 title: "SARS-CoV-2 Pandemic 2019-now"
 subtitle: "Introduction to the little known"  
-author: "Elena Dudukina, Raquel Raquel Avelar"
+author: "Author: Elena Dudukina, PhD student"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -374,6 +374,10 @@ Postinfectious | Host is no longer capable of transmission
 - https://twitter.com/EpiEllie
 - https://twitter.com/mlipsitch
 - https://twitter.com/CT_Bergstrom
+
+# Aknowledgements
+- Raquel Nogueira Avelar E SilvaMSc, Postdoc
+- Deirdre Cronin Fenton, Associate professor
 
 
 ```{r eval=FALSE, include=FALSE}
