@@ -1,7 +1,7 @@
 ---
 title: "SARS-CoV-2 Pandemic 2019-now"
 subtitle: "Introduction to the little known"  
-author: "Elena Dudukina, Raquel Raquel Avelar, Deirdre Cronin Fenton"
+author: "Elena Dudukina, Raquel Raquel Avelar"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -37,53 +37,69 @@ duo_accent(
   header_h1_font_size = "45px"
 )
 ```
+# Key definitions
+- Attack rate
+  - The proportion of the population which contracts the disease from the population at risk
 
- # Epidemics are not new to human history
-- **1348-1351** **Bubonic plague** (Second plague pandemic, or "Black death")
-    - Bacterium _Yersinia pestis_
-    - Estimated 25-75 million deaths in Europe and Asia
-    - Reduced 30% to 60% of Europe's population ([Austin Alchon, 2003](https://books.google.dk/books?id=YiHHnV08ebkC&pg=PA21&redir_esc=y#v=onepage&q&f=false))
-    - No treatment
-    
-.footnote[_"The trend of recent research is pointing to **45–50% of the European population dying during a four-year period***. There is a fair amount of geographic variation. In Mediterranean Europe, areas such as **Italy, the south of France and Spain**, where plague ran for about four years consecutively, it was probably closer to **75–80% of the population**. In **Germany and England** it was probably closer to **20%**"_ (Philip Daileader, The Late Middle Ages, 2007)]
+- Case-fatality risk (CFR)
+  - The probability that a person dies from an infection given that they are a case
+
+- Infection-fatality risk (IFR)
+  - Defines a case as a person who has shown evidence of infection, either by clinical detection of the pathogen or by seroconversion or other immune response
+  
+- Basic reproductive number **R0** (often pronounced _"R naught"_)
+  - The **average number of secondary cases** of an infection that occur **in a completely
+susceptible population following a single infectious case**
+
+.footnote[[Lipsitch, 2015](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846); case-fatality risk and infection-fatality risk are sometimes referred to as "rates".]
+
 ---
-- **1918-1919** 1st pandemic caused by **H1N1 influenza virus** ("Spanish flu")
-    - Basic reproductive number (R0): 1.5 (1.2–3.0)([Vynnycky, 2007](https://academic.oup.com/ije/article/36/4/881/667165))
-    - ~ 500 million estimated infected (33% of the world's population) ([Taubenberger, 2006](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3291398/))
-    - 17 to 20 million deaths globally
-    - Severe disease with case-fatality rate >2.5%
-    - No treatment
-    - No prevention (no vaccine)
---
+# Basic Reproductive Number
+.pull-left[
+
+  _How many other people one contagious individual will infect in non-immune population?_
+  
+  - Mathematical modeling of transmission within populations
+  ]
+
+.right[
+![](r0-covid19.png)
+]
+
+.footnote[
+[Vox, 2020](https://www.vox.com/science-and-health/2020/4/2/21197617/coronavirus-pandemic-covid-19-death-rate-transmission-risk-factors-lockdowns-social-distancing)
+
+[NEJM, 2020](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)]
+
+---
+ # Contemporary epidemics history
 
 - **2002-2004** **SARS** (SARS-CoV virus)
-    - Basic reproductive number (R0): 2.0-4.0 ([WHO, 2003](https://www.who.int/csr/sars/en/WHOconsensus.pdf))
+    - R0: 2.0 to 4.0 ([WHO, 2003](https://www.who.int/csr/sars/en/WHOconsensus.pdf))
     - 8096 cases
-    - ~774 deaths in 32 countries **→** case fatality rate 9.6% ([WHO, 2004](https://www.who.int/csr/sars/country/table2004_04_21/en/))
-    - Vaccine inducing neutrolizing antibodies ([Chien-Te Tseng, 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3335060/))
+    - 774 deaths in 32 countries **→** case fatality rate 9.6% ([WHO, 2004](https://www.who.int/csr/sars/country/table2004_04_21/en/))
+    - Vaccine inducing neutrolizing antibodies now available ([Chien-Te Tseng, 2012](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3335060/))
 
 --
 
 - **2009** 2nd pandemic caused by **H1N1 influenza virus** (H1N1/09, or "Swine flue")
-    - Basic reproductive number (R0): 1.5 (1.3–1.7)
-    -	~ 0.7–1.4 billion estimated infected worldwide
-    -	~ 151,700–575,400 estimated deaths worldwide
-    -	Vaccine available
+    - R0: 1.5 (1.3 to 1.7)
+    -	0.7–1.4 **billion** estimated infected worldwide
+    -	151,700–575,400 estimated deaths worldwide
+    -	Vaccine now available
     
 ---
-
 - **2012-present** **MERS** (MERS-CoV)
-    - Basic reproductive number (R0) <1 ([WHO, 2019](https://apps.who.int/iris/bitstream/handle/10665/326126/WHO-MERS-RA-19.1-eng.pdf?ua=1))
-      - Heterogenous R0: 1.0-5.7 at the start of the outbreak → < 1.0 [Bernard-Stoecklin, 2019](https://www.nature.com/articles/s41598-019-43586-9)
+    - R0 <1 [(WHO, 2019)](https://apps.who.int/iris/bitstream/handle/10665/326126/WHO-MERS-RA-19.1-eng.pdf?ua=1)
+      - Heterogenous R0: 1.0-5.7 at the start of the outbreak → < 1.0 [(Bernard-Stoecklin, 2019)](https://www.nature.com/articles/s41598-019-43586-9)
     - 2012-2016: 1841 laboratory confirmed cases → 80% in the Kingdom of Saudi Arabia
-    -	~ 35% (n=652) died
+    -	35% (n=652) died
 --
 
 -	**2014-2016 Ebola**
-    -	Basic reproductive number (R0): 1.7-2.0 ([WHO Ebola Response Team, 2016](https://www.who.int/ebola/publications/nejm-after-ebola.pdf) )
-    - ~ 28,542 cases
-    -	~ 11,299 deaths
-    -	CFR ~ 40%
+    - 28,542 cases
+    -	11,299 deaths
+    -	CFR was 40%
 
 ---
 
@@ -126,7 +142,7 @@ Postinfectious | Host is no longer capable of transmission
       - SIRS (Susceptible → Infectious → Recovered → Susceptible)
       - SEIR (Susceptible → Exposed → Infectious → Recovered)
       - Modifications accomodating other compartments to model post-infection immunity, vaccination, etc.
-      - Straightforward/transparent
+      - Straightforward, transparent, does not always reflect real-life complexities
   
   _Simulating individuals not the population groups_
   - **Agent-based models (ABMs)**
@@ -139,42 +155,6 @@ Postinfectious | Host is no longer capable of transmission
 ]
 
 ---
-# Key definitions
-- Attack rate
-  - The proportion of the population which contracts the disease fro the population at risk
-
-- Case-fatality risk (CFR)
-  - The probability that a person dies from an infection given that they are a case
-
-- Infection-fatality risk (IFR)
-  - Defines a case as a person who has shown evidence of infection, either by clinical detection of the pathogen or by seroconversion or other immune response
-  
-- Basic reproductive number **R0** (often pronounced _"R naught"_)
-  - The **average number of secondary cases** of an infection that occur **in a completely
-susceptible population following a single infectious case**
-
-.footnote[[Lipsitch, 2015](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846)]
-
----
-# Basic Reproductive Number
-.pull-left[
-
-  _How many other people one contagious individual will infect in non-immune population?_
-  
-  - Mathematical modeling of transmission within populations
-  ]
-
-.right[
-![](r0-covid19.png)
-]
-
-.footnote[
-[Vox, 2020](https://www.vox.com/science-and-health/2020/4/2/21197617/coronavirus-pandemic-covid-19-death-rate-transmission-risk-factors-lockdowns-social-distancing)
-
-[NEJM, 2020](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)]
-
----
-
 # Coronavirus disease (COVID-19) outbreak
 
 - **SARS-CoV-2**
@@ -182,11 +162,12 @@ susceptible population following a single infectious case**
 - Origin: bats via unknown intermediate hosts to infect humans
 - Uses angiotensin-converting enzyme 2 (ACE2), the same receptor as SARS-CoV, to infect humans
 - Incubation period
-    - Median 5.1 days (95% CI, 4.5 to 5.8 days), and 97.5% of those who develop symptoms will do so within 11.5 days ([mainland China data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081172))
+    - Median 5.1 days (4.5 to 5.8 days)
+    - 97.5% of those who develop symptoms will do so within 11.5 days ([mainland China data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7081172))
     - China CDC: 10-14 days
     - USA CDC: [2-14 days](https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html)
 - Period of infectivity: 90% negative viral RNA tests on nasopharyngeal swabs by 10 days after the onset of symptoms ([Liu, 2020](https://www.thelancet.com/action/showPdf?pii=S1473-3099%2820%2930232-2))
-- Immunity: preliminary data for neutralizing antibodies ([Kai-Wang To, 2020](https://www.thelancet.com/action/showPdf?pii=S1473-3099%2820%2930196-1); [Ju, 2020](https://www.biorxiv.org/content/10.1101/2020.03.21.990770v1.full.pdf))
+- Immunity: preliminary data showing that neutralizing antibodies ([Kai-Wang To, 2020](https://www.thelancet.com/action/showPdf?pii=S1473-3099%2820%2930196-1); [Ju, 2020](https://www.biorxiv.org/content/10.1101/2020.03.21.990770v1.full.pdf))
 
 .right[![:scale 30%](SARS CoV2.jfif)]
 
@@ -194,21 +175,21 @@ susceptible population following a single infectious case**
 # March 2020: recap
 .center[![](covid19-happening.png)]
 
-.footnote[[Imperial College London](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)]
+.footnote[[Imperial College London, R-13](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)]
 ---
 # Testing for COVID-19
 - Different testing capacity/kits
-- Different ways of recording/sharing data
+- Different ways of recording/releasing/sharing data
 
 - Probability of being tested is not independent of disease severity and of the outcome
 
 - RT-PCR:
     - Tests are not perfect
-      - Analytical Sensitivity 95%
-      - Positive (COVID-19_N_P) – positive for all targets detected (Ct < 40)
-      - [Analytical Specificity: no cross-reactivity](https://www.fda.gov/media/136151/download)
+      - Analytical sensitivity 95%
+        - Positive (COVID-19_N_P) – positive for all targets detected (Ct < 40)
+      - Analytical Specificity: no cross-reactivity [(FDA, 2020)](https://www.fda.gov/media/136151/download)
       
-- No reliable data on comparative accuracy of oropharyngeal vs nasopharyngeal swabs for diagnosis of [COVID-19](https://www.cebm.net/covid-19/comparative-accuracy-of-oropharyngeal-and-nasopharyngeal-swabs-for-diagnosis-of-covid-19/)
+- No reliable data on comparative accuracy of oropharyngeal vs nasopharyngeal swabs for diagnosis of COVID-19 [(The Centre for Evidence-Based Medicine, Oxford University)](https://www.cebm.net/covid-19/comparative-accuracy-of-oropharyngeal-and-nasopharyngeal-swabs-for-diagnosis-of-covid-19/)
 
 ---
 **Total number of tests for COVID-19**
@@ -255,7 +236,17 @@ susceptible population following a single infectious case**
 
 .footnote[[Lipsitch, 2015](https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003846)]
 ---
-# Mind the populations
+# Delayed reporting
+
+.pull-left[
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">To summarise, I think it’s better to use the NHS England deaths data to illustrate progression of UK deaths and as a starting point for projections - taking the difference between the total daily death figures from the DHSC gives a misleading shape. 14/ <a href="https://t.co/5cQwoXYyUl">pic.twitter.com/5cQwoXYyUl</a></p>&mdash; Matt Fletcher (@longevitymatt) <a href="https://twitter.com/longevitymatt/status/1247449193536466945?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+.pull-right[
+![](uk-delayed-deaths.jpg)
+]
+---
+# Asymptomatic or pre-symptomatic?
 
 .pull-left[
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is a misreading of the data from China, interepreting numbers from one population as being from another. Please see attached and withdraw the manuscript immediately <a href="https://t.co/JTYqMmuCdF">pic.twitter.com/JTYqMmuCdF</a></p>&mdash; Yaneer Bar-Yam (@yaneerbaryam) <a href="https://twitter.com/yaneerbaryam/status/1246158748047073286?ref_src=twsrc%5Etfw">April 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -264,22 +255,21 @@ susceptible population following a single infectious case**
 .pull-right[![:scale 85%](pre-symptomatic.jfif)]
 
 ---
-# Risk factors for severe illness
+# Risk factors for severe COVID-19 illness
 .pull-left[
 - Age 60+
 
 - Comorbidities
   - Cardiovascular disease
   - Diabetes mellitus
-  - Hypertension
   - Chronic lung disease
+  - Hypertension
   - Cancer
   - Chronic kidney disease
   
-- Possibly sex
-  - Larger proportion of men was in deceased group than that in recovered group (73% vs 55%)
-
-.footnote[[Jian-Min Jin, 2020](https://www.medrxiv.org/content/10.1101/2020.02.23.20026864v2); [Chen, 2020](https://www.bmj.com/content/368/bmj.m1091)]
+- Sex
+  - China: larger proportion of men was in deceased group than that in recovered group (73% vs 55%) [(Jian-Min Jin, 2020](https://www.medrxiv.org/content/10.1101/2020.02.23.20026864v2); [Chen, 2020)](https://www.bmj.com/content/368/bmj.m1091)
+  - Italy: overall CFR of 11.4% in men vs 9.2% in women [(Epidemia COVID-19, Aggiornamento nazionale)](https://www.epicentro.iss.it/coronavirus/bollettino/Bollettino-sorveglianza-integrata-COVID-19_26-marzo%202020.pdf)
 ]
 
 .pull-right[
@@ -290,8 +280,9 @@ susceptible population following a single infectious case**
 - No specific treatment available
   - Oxygenation support for severely ill
 
-- Clinical trials for variety of agents (antiviral, immune modulators, etc.)
+- Clinical trials for variety of agents (antiviral, immune modulators, antibacterial, monoclonal antibodies, etc.)
   - Chloqoquine, hydroxychloroquine and azithromycin, tocilizumab, camostat mesilate, sargramostim, colchicine, imatinib, IFNβ-1a, inhaled steroids, remdesivir, oseltamivir, etc. [(EU Clinical Trial Register;](https://www.clinicaltrialsregister.eu/ctr-search/search?query=covid-19) [laegemiddelstyrelsen.dk)](https://laegemiddelstyrelsen.dk/da/nyheder/temaer/ny-coronavirus-covid-19/~/media/5B83D25935DF43A38FF823E24604AC36.ashx)
+  - Mind the comparison groups and design features
 
 - Available results
   - Lopinavir-ritonavir vs standard care showed no decrease in mortality of COVID-19 patients [(Cao, 2020)](https://www.nejm.org/doi/full/10.1056/NEJMoa2001282?query=featured_coronavirus)
@@ -310,8 +301,6 @@ susceptible population following a single infectious case**
 .left[
 - Design
   - In essence - observational study without adjustment for the sources of bias
-- Number of participants
-- Potentially no peer review (pre-print vs printed version)
 - "Control group" ascertainment
     - Refused consent to receive active treatment → allocated to "control group"
     - Ethically and methodologically problematic
@@ -328,18 +317,35 @@ susceptible population following a single infectious case**
       - Clinical relevance of the end-point
 
 [Dahly, Gates, Morris, 2020](https://zenodo.org/record/3724167#.XowsG9IzbBQ)]
+
 ---
+# Ethical conduct of research
+
+.pull-left[
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I asked Newsweek if they could add the link. <br>Here is that blog post, in case you wondered:<a href="https://t.co/Ez5dnm8hoM">https://t.co/Ez5dnm8hoM</a></p>&mdash; Elisabeth StayingAtHome StayingAlive Bik (@MicrobiomDigest) <a href="https://twitter.com/MicrobiomDigest/status/1247402645553176578?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+.pull-right[
+- Peer-review?
+- Conflict of interests
+
+.pull-right[![](title-authors-and-received-accepted-dates-marked.png)]
+
+
+.pull-left[![](editorial-board-of-the-journal.png)]
+]
+---
+
 # Vaccine development
-- **Time**
-    - 18 months
+- **Time** 18 months
 - **Funding**
  - Wellcome trust: raising **$8bn**[](https://wellcome.ac.uk/what-we-do/our-work/coronavirus-covid-19/investment/covid-zero?utm_source=twitter&utm_medium=o-wellcome)
  - Coalition for Epidemic Preparedness Innovations (Cepi) + Novavax + University of Oxford
-      - Established funding **$4.4m** and raising **$2bn**  [(Guardian, MArch 2002)](https://www.theguardian.com/world/2020/apr/06/when-will-coronavirus-vaccine-be-ready)
+      - Established funding **$4.4m** and raising **$2bn**  [(Guardian, March 2002)](https://www.theguardian.com/world/2020/apr/06/when-will-coronavirus-vaccine-be-ready)
 - Phase 1 Clinical Trial Of COVID-19 vaccine candidates [(WHO, March 2020)](https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf?ua=1)
 
 - Countries cannot afford "herd immunity" approach
-  - 0.41%-15% infected in Europe by the end of March 2020 [Imperial College London](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)
+  - 0.41% to 15% of population are infected across European countries by the end of March 2020 [(Imperial College London, R-13)](https://www.imperial.ac.uk/media/imperial-college/medicine/mrc-gida/2020-03-30-COVID19-Report-13.pdf)
   <blockquote class="twitter-tweet"><p lang="en" dir="ltr">9/ Substituting in for R, we get:<br><br>R&lt;1 =&gt; R0*(% susceptible)&lt;1 =&gt; %susceptible&lt;1/R0<br><br>Solving for R0 = 3, we get %susceptible&lt;33.3%<br><br>In other words, as long as more than 33% of the population is susceptible, the disease spreads</p>&mdash; Health &quot;Physical Isolation&quot; Nerd (@GidMK) <a href="https://twitter.com/GidMK/status/1247328601155842051?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---
@@ -362,7 +368,7 @@ susceptible population following a single infectious case**
 .center[![:scale 60%](from-home.jpg)]
 
 ---
-# Resources
+# Useful resources
 - https://ourworldindata.org/coronavirus#
 - http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-13-europe-npi-impact/
 - https://twitter.com/EpiEllie
