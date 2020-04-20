@@ -1,7 +1,7 @@
 ---
 title: "SARS-CoV-2 Pandemic 2019-now"
 subtitle: "Introduction to the little known"  
-author: "Author: Elena Dudukina, PhD student"
+author: "Author: Elena Dudukina, PhD student. Presenters: Elena Dudukina, Raquel Nogueira Avelar e Silva"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -283,7 +283,7 @@ class: inverse
 
  # Treatment of COVID-19 and other aspects
 
-# Raquel Nogueira Avelar E Silva, MSc, Postdoc
+**Presenter: Raquel Nogueira Avelar e Silva, MSc, PhD, Postdoc**
 
 ---
 # Treatment of COVID-19
@@ -388,7 +388,7 @@ class: inverse
 - https://twitter.com/CT_Bergstrom
 
 # Aknowledgements
-- Raquel Nogueira Avelar E Silva, MSc, Postdoc
+- Raquel Nogueira Avelar e Silva, MSc, PhD, Postdoc
 - Deirdre Cronin Fenton, Associate professor
 
 
