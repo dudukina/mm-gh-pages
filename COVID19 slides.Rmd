@@ -34,7 +34,9 @@ duo_accent(
   code_font_google   = google_font("Ramabhadra"),
   title_slide_background_color = "#00aba4",
   link_color = "#00aba4",
-  header_h1_font_size = "45px"
+  header_h1_font_size = "45px",
+  inverse_text_color = "#FFFFFF",
+  inverse_header_color = "#FFFFFF"
 )
 ```
 # Key definitions
@@ -275,6 +277,14 @@ Postinfectious | Host is no longer capable of transmission
 .pull-right[
 ![](covid-comorbid.png)
 ]
+
+---
+class: inverse
+
+ # Treatment of COVID-19 and other aspects
+
+# Raquel Nogueira Avelar E Silva, MSc, Postdoc
+
 ---
 # Treatment of COVID-19
 - No specific treatment available
@@ -295,6 +305,24 @@ Postinfectious | Host is no longer capable of transmission
 ---
 # Study of chloroquine + azytromycin
 ![](chlor-azytro.png)
+
+
+---
+# Ethical conduct of research
+
+.pull-left[
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I asked Newsweek if they could add the link. <br>Here is that blog post, in case you wondered:<a href="https://t.co/Ez5dnm8hoM">https://t.co/Ez5dnm8hoM</a></p>&mdash; Elisabeth StayingAtHome StayingAlive Bik (@MicrobiomDigest) <a href="https://twitter.com/MicrobiomDigest/status/1247402645553176578?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+]
+
+.pull-right[
+- Peer-review?
+- Conflict of interests
+
+.pull-right[![](title-authors-and-received-accepted-dates-marked.png)]
+
+
+.pull-left[![](editorial-board-of-the-journal.png)]
+]
 
 ---
 # Points of concern
@@ -318,22 +346,6 @@ Postinfectious | Host is no longer capable of transmission
 
 [Dahly, Gates, Morris, 2020](https://zenodo.org/record/3724167#.XowsG9IzbBQ)]
 
----
-# Ethical conduct of research
-
-.pull-left[
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I asked Newsweek if they could add the link. <br>Here is that blog post, in case you wondered:<a href="https://t.co/Ez5dnm8hoM">https://t.co/Ez5dnm8hoM</a></p>&mdash; Elisabeth StayingAtHome StayingAlive Bik (@MicrobiomDigest) <a href="https://twitter.com/MicrobiomDigest/status/1247402645553176578?ref_src=twsrc%5Etfw">April 7, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-]
-
-.pull-right[
-- Peer-review?
-- Conflict of interests
-
-.pull-right[![](title-authors-and-received-accepted-dates-marked.png)]
-
-
-.pull-left[![](editorial-board-of-the-journal.png)]
-]
 ---
 
 # Vaccine development
@@ -376,7 +388,7 @@ Postinfectious | Host is no longer capable of transmission
 - https://twitter.com/CT_Bergstrom
 
 # Aknowledgements
-- Raquel Nogueira Avelar E SilvaMSc, Postdoc
+- Raquel Nogueira Avelar E Silva, MSc, Postdoc
 - Deirdre Cronin Fenton, Associate professor
 
 

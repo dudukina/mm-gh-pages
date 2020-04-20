@@ -82,11 +82,11 @@ a, a > code {
 }
 .inverse {
   background-color: #00aba4;
-  color: #000000;
+  color: #FFFFFF;
   
 }
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #000000;
+  color: #FFFFFF;
 }
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: #FFFFFF;
