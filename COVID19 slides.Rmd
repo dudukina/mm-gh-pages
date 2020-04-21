@@ -353,7 +353,7 @@ class: inverse
 - **Funding**
  - Wellcome trust: raising **$8bn**[](https://wellcome.ac.uk/what-we-do/our-work/coronavirus-covid-19/investment/covid-zero?utm_source=twitter&utm_medium=o-wellcome)
  - Coalition for Epidemic Preparedness Innovations (Cepi) + Novavax + University of Oxford
-      - Established funding **$4.4m** and raising **$2bn**  [(Guardian, March 2002)](https://www.theguardian.com/world/2020/apr/06/when-will-coronavirus-vaccine-be-ready)
+      - Established funding **$4.4m** and raising **$2bn**  [(Guardian, March 2020)](https://www.theguardian.com/world/2020/apr/06/when-will-coronavirus-vaccine-be-ready)
 - Phase 1 Clinical Trial Of COVID-19 vaccine candidates [(WHO, March 2020)](https://www.who.int/blueprint/priority-diseases/key-action/novel-coronavirus-landscape-ncov.pdf?ua=1)
 
 - Countries cannot afford "herd immunity" approach
